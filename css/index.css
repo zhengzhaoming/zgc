@@ -1,0 +1,437 @@
+/*公共样式*/
+body{
+	color:#666;
+	font-family: '微软雅黑';
+}
+a{
+	color:#666;
+}
+a:hover{
+	
+	text-decoration: none;
+}
+h2{
+	color:#999;
+	font-size: 24px;
+	line-height: 36px;
+}
+.m15px{
+	margin-top: 15px;
+}
+/*字体设置*/
+@font-face {
+	font-family:'zgc';
+	src:url('../fonts/glyphicons-halflings-regular.woff')	format("woff");
+}
+/*头部导航栏开始*/
+.navbar {
+    position: fixed;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: none;
+    z-index: 1000;
+}
+.navbar-brand {
+  	float: left;
+  	padding: 0;
+  	font-size: 18px;
+  	line-height: 20px;
+  	height: 50px;
+}
+
+.navbar-default{
+	background: white;
+}
+.navbar-box{
+	box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+}
+.navbar-box {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+}
+.nav-pills > li + li {
+    margin-left: 0px;
+}
+.nav>li>a{
+	display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 20px;
+    border-top: 4px solid transparent;
+}
+.nav>li>a:hover{
+	color: white;
+}
+.nav-pills>li>a{
+    width: 68px;
+    height: 68px;
+    text-align: center;
+    border-radius: 0;
+}
+.nav-pills>li>a.active {
+    color: #ffffff;
+    float: left;
+    background-color: #cc0000;
+	border-top: 4px solid  #af0000;
+}
+.nav-pills>li>a:hover{
+    background-color: #cc0000;
+	border-top: 4px solid  #af0000;
+}
+@media (max-width: 1100px) {
+	.navbar-brand>img{
+		height: 40px;
+		padding-left:20px;
+	}
+}
+
+/*底部导航栏结束*/
+
+
+/*轮播图开始*/
+.zgc_banner{
+	margin-top: 68px;
+}
+.zgc_banner .big{
+	display: block;
+}
+@media (max-width: 1100px) {
+	.zgc_banner{
+		margin-top: 50px;
+	}
+}
+.zgc_banner .big>img{
+	width: 100%;
+}
+.carousel-indicators li{
+	border: none;
+	background: rgba(255,255,255,0.4);
+}
+.carousel-indicators{
+	margin-bottom: 0;
+	bottom: 5%;
+}
+/*轮播图结束*/
+
+/*街区新闻开始*/
+.adaptive-img{
+	display: block;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.media-heading{
+	margin-bottom: 5px;
+}
+.media-heading>a{
+	color:#333;
+	font-size: 22px;
+}
+.media-heading>a:hover{
+	color:#cc0000;
+}
+.list_all{
+	widows: 100%;
+}
+.list_all li a:hover{
+	cursor: pointer;
+	color:#f00;
+	text-decoration: underline;
+}
+.right_list_title{
+	width: 100%;
+	overflow: hidden;
+}
+.right_list {
+    width: 100%;
+    overflow: hidden;
+}
+.right_list li {
+    background: url(../images/dian.png) no-repeat left;
+    padding-left: 12px;
+    line-height: 22px;
+    font-size: 14px;
+    margin-top: 7px;
+    font-family: "Microsoft Yahei", "黑体";
+    white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    list-style-type: none;
+}
+.right_list .list_all{
+	padding: 0;
+}
+.right_list_title .item{
+	/*display: none;*/
+	opacity: 0;
+	position: relative;
+	display: none;
+}
+.right_list_title .right_list{
+	float:left;
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+.right_list_title .active{
+	display: block;
+	opacity: 1;
+}
+
+
+/*街区新闻结束*/
+
+/*入驻机构开始*/
+.zgc_organization a{
+	font-size: 18px;
+}
+.zgc_organization a:hover{
+	color:#000;
+	text-decoration: underline;
+}
+.img-circle {
+    width: 114px;
+    height: 114px;
+    border: 4px solid #ddd;
+    border-radius: 70%;
+    cursor: pointer;
+    transition: .2s;
+}
+.img-circle:hover{
+    border: 4px solid #BEBEBE;
+}
+
+
+/*街区活动开始*/
+.zgc_activity .row{
+	margin:0 -5px;
+}
+.zgc_activity .row .active_left{
+	padding: 0 5px;
+	margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+	.active_left,.active_right,.out-box{
+		height: 219px;
+	}
+	.ou-box{
+		height: 104px;
+	}
+	#owl_container .adaptive-img{
+		height: 172.5px;
+	}
+}
+@media (min-width: 992px) {
+	.active_left,.active_right,.outbox{
+		height: 287px;
+	}
+	.ou-box{
+		height: 138px;
+	}
+	#owl_container .adaptive-img{
+		height: 268px;
+	}
+}
+@media (min-width: 1200px) {
+	.active_left,.active_right,.outbox{
+		height: 349px;
+	}
+	.active_right .in-pic,.active_right .out-box,.ou-box{
+		height: 169px;
+	}
+	#owl_container .adaptive-img{
+		height: 362.5px;
+	}
+
+}
+@media (max-width: 768px) {
+	.active_left,.active_right{
+		height: 300px;
+	}
+	.active_right .in-pic,.active_right .out-box{
+		height: 150px;
+	}
+	#owl_container .adaptive-img{
+		height: 172.5px;
+	}
+}
+.out-box{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.in-pic{
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	transition: 0.8s;
+}
+.active_right .out-box{
+	margin-bottom: 10px;
+}
+.active_left .out-box:hover .in-pic{
+	left: -100%;
+}
+.active_right .out-box:hover .in-pic{
+	left: -100%;
+}
+.activity-cover{
+	width: 100%;
+	height: 100%;
+}
+.active-info{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: #333333;
+    /*justify-content:center;
+	align-items:center;
+	display:-webkit-flex;*/
+}
+.tab{
+	display: table;
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+}
+.active_left .in-pic{
+	background-image: url(../images/active_1.png);
+	background-repeat:  no-repeat;
+	background-position: center;
+	background-size: cover
+}
+.tab-cell{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	padding: 5px;
+}
+.tab-cell {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+}
+.tab-cell a:hover{
+	color: #666;
+}
+.info-text {
+    width: 100%;
+    color: white;
+}
+.text-overflow {
+    display: block;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+
+
+.zgc_activity .row .active_right{
+	
+}
+/*街区活动结束*/
+
+.zgc_partner{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 6px;
+    background-color: #2f2f2f;
+}
+
+.grey12s{
+	color: #ccc;
+    font-size: 12px;
+}
+.grey12s a {
+    color: #ccc;
+    font-size: 12px;
+    text-decoration: none;
+    line-height: 24px;
+}
+.grey12s a:hover {
+    color: #ccc;
+    font-size: 12px;
+    text-decoration: underline;
+}
+.white12{
+	color: #fff;
+    font-size: 12px;
+}
+.white18{
+	color: #fff;
+    font-size: 18px;
+}
+.white18 a{
+	color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+.white18 a:hover {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+
+/*底部版权开始*/
+.footer{
+	float: left;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
+    line-height: 30px;
+    background-color: #262626;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color:white;
+}
+/*底部版权结束*/
+
+
+
+
+/*回到顶部开始*/
+.rocket_top{
+	position: fixed;
+	top: 90%;
+	z-index: 9999;
+	margin:-125px 0 0;
+	right: 2%;
+	width: 56px;
+	height: 86px;
+	overflow: hidden;
+	background: url(../images/rocket_button_up.png) no-repeat scroll 0 0;
+	cursor: pointer;
+}
+.rocket_top div{
+	width: 56px;
+	height: 86px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+.rocket_top .level_2{
+	background: url(../images/rocket_button_up.png) no-repeat scroll -56px 0;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.5s;
+}
+.rocket_top:hover .level_2{
+	opacity: 1;
+}
+/*回到顶部结束*/

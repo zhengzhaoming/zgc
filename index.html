@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <title>中关村创业大街</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <style>
+		
+    </style>
+  </head>
+  <body>
+  	<!--整体布局开始-->
+  	<div class="wrap">
+		<!--头部通栏开始-->
+		<header class="zgc_header">
+			<nav class="navbar navbar-default navbar-fixed-top navbar-box">
+			  <div class="container">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#">
+			      	<img src="images/logo.png" alt="" />
+			      </a>
+			    </div>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav nav-pills pull-right">
+			        <li><a class="active" href="#">首页</a></li>
+			        <li><a href="#">街区介绍</a></li>
+			        <li><a href="#">街区新闻</a></li>
+			        <li><a href="#">入驻机构</a></li>
+			        <li><a href="#">政策指南</a></li>
+			        <li><a href="#">街区活动</a></li>
+			        <li><a href="#">服务平台</a></li>
+			        <li><a href="#">街区招聘</a></li>
+			        <li><a href="#">预约租赁</a></li>
+			        <li><a href="#">English</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</header>
+		<!--头部通栏结束-->
+		
+		<!--轮播图开始-->
+		<div class="zgc_banner">
+			<div id="carousel-example-generic" class="carousel slide wjs_banner" data-ride="carousel">
+			  <!-- 小圆点 -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			  </ol>
+			
+			  <!-- 轮播内容 -->
+			  <div class="carousel-inner" role="listbox" id="inner">
+			  </div>
+			  
+			  <!-- 左右方向箭头 -->
+			  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			  </a>
+			</div>
+			<script type="text/template" id="slider">
+			    <%for(var i=0;i<json.length;i++){%>
+						<div class="<%=(i==0)?'item active':'item'%>">
+				    	<a href="#" class="big"><img src="<%=json[i].img%>"/></a>
+				    </div>	
+			   <%}%>
+	    	</script>		
+		</div>
+		<!--轮播图结束-->
+		
+		<!--街区新闻开始-->
+		<div class="container justify zgc_news">
+			<h2>街区新闻</h2>
+			<!--图片和文字-->
+			<div class="row indexnews">	
+				<!--图片-->
+				<div id="carousel-example-generic2" class="carousel slide" data-ride="carousel">
+					<div id="owl_container" class="col-xs-12 col-sm-6 col-md-7 col-lg-7">
+						<div class="carousel-inner" role="listbox">
+	       		 	<div class="item active">
+	              <a target="_blank" class="adaptive-img" style="background-image:url(images/new_1.jpg)"></a>
+	            </div>
+	            <div class="item">
+	              <a target="_blank" class="adaptive-img" style="background-image:url(images/new_2.jpg)"></a>
+	            </div>
+	            <div class="item">
+	              <a target="_blank" class="adaptive-img" style="background-image:url(images/new_3.jpg)"></a>
+	            </div>
+	            <div class="item">
+	              <a target="_blank" class="adaptive-img" style="background-image:url(images/new_4.jpg)"></a>
+	            </div>
+	            <div class="item">
+	              <a target="_blank" class="adaptive-img" style="background-image:url(images/new_5.jpg)"></a> 
+	            </div>
+	            <div class="item">
+	              <a target="_blank" class="adaptive-img" style="background-image:url(images/new_6.jpg)"></a>
+	            </div>               
+						</div>
+					</div>
+				</div>
+				<!--文字-->
+				<div class="col-xs-12 col-sm-6 col-md-5 col-lg-5">
+					<div class="right_list_title" style="display: block;">
+						  <!-- 轮播内容 -->
+						  <!--<div class="carousel-inner" role="listbox" id="inner">-->
+				  		<div class="item active">
+					   		<h4 class="media-heading"><a href="#">2017创响中国北京站活动邀请函...</a></h4>
+        				<span id="news_content" class="grey14">‍‍‍‍&nbsp;&nbsp;为推动大众创业、万众创新纵深发展，促进产业创新升级，引领实体经济发展，2017创响中国北京站活动...</span>
+					    </div>
+					    <div class="item">
+					   		<h4 class="media-heading"><a href="#">看中关村创业大街“总理咖啡”的化学反应...</a></h4>
+        				<span id="news_content" class="grey14">‍‍‍‍北京中关村创业大街的3W咖啡有一款畅销了整整两年的明星饮品，名为“总理咖啡”。这家创业咖啡馆一进门摆放的照片，...</span>
+					    </div>
+					    <div class="item">
+					   		<h4 class="media-heading"><a href="#">北京市八一学校师生到创业大街“串门”...</a></h4>
+        				<span id="news_content" class="grey14">5月20日，北京市八一学校“八一创业营”的师生们在党委书记牛震云的带领下，来到中关村创业大街参观交流，近距离感...</span>
+					    </div>
+					    <div class="item">
+					   		<h4 class="media-heading"><a href="#">海淀发力打造知识产权强区，创业大街做好配套服务...</a></h4>
+        				<span id="news_content" class="grey14">‍‍‍‍&nbsp;&nbsp;5月2日，由北京市知识产权局、中关村管委会、海淀区人民政府主办，海淀园管委会、...</span>
+					    </div>
+					    <div class="item">
+					   		<h4 class="media-heading"><a href="#">中关村知识产权帮扶计划在创业大街启动...</a></h4>
+        				<span id="news_content" class="grey14">4月21日， 中关村知识产权帮扶计划启动暨走进创业大街专场在全球创新社区成功举办，此次活动是为帮助相关企业和服...</span>
+					    </div>
+					    <div class="item">
+					   		<h4 class="media-heading"><a href="#">新浪新创课今年第一讲在创业大街举行...</a></h4>
+        				<span id="news_content" class="grey14">‍‍‍‍&nbsp;&nbsp;4月20日下午，由新浪创业主办、新浪微筹集和中关村创业大街联合主办的新浪创业新创课进行了今年第一...</span>
+					    </div>
+					</div>
+						  <!--</div>-->		
+          <div class="right_list m15px">
+            <ul class="list_all">
+                <li><a class="text-overflow">看中关村创业大街“总理咖啡”的化学反应</a></li>
+                <li><a class="text-overflow">韩国留学生圆梦创业大街</a></li>
+                <li><a class="text-overflow">北京市八一学校师生到创业大街“串门”</a></li>
+                <li><a class="text-overflow">北京日报：“五四”青年节，青年创业忙</a></li>
+                <li><a class="text-overflow">海淀发力打造知识产权强区，创业大街做好配套服务</a></li>
+                <li><a class="text-overflow">中关村知识产权帮扶计划在创业大街启动</a></li>
+            </ul>
+						</div>
+				</div>
+			</div>
+		</div>
+		<!--街区新闻结束-->
+		
+		<!--入驻机构开始-->
+		<div class="container zgc_organization">
+			<h2>入驻机构</h2>
+			<div class="row indexjigou">
+        <div id="indexJigou" data-ride="carousel">
+            <div class="carousel-inner" id="demo" style="overflow:hidden;height:387px;">
+                <div id="temp" style="width: 100%; height: 129px; display: none;"></div>
+	                <div class="item active">
+			            	<div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_1.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			              </div>
+			            	<div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_2.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			              </div>
+			            	<div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_3.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			               </div>
+			               <div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_1.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			              </div>
+			            	<div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_2.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			              </div>
+			            	<div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_3.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			               </div>
+			               <div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_1.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			              </div>
+			            	<div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_2.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			              </div>
+			            	<div class="col-md-4 m15px">
+			                    <div class="media">
+			                        <a class="pull-left"><img class="img-circle" src="images/pic_3.gif" alt=""> </a>
+			                        <div class="media-body justify">
+			                            <h4 class="media-heading grey18 m15px"><a target="_blank" href="javascript:;">金榕树</a></h4>
+			                            <span class="grey12">何为金榕树计划?金榕树计划的全称是“金榕树自媒体连接创业计划”</span>
+			                        </div>
+			                    </div>
+			               </div>
+              	</div>
+            </div>
+        </div>
+    	</div>
+		</div>
+		<!--入驻机构结束-->
+		<!--街区活动开始-->
+		<div class="container zgc_activity">
+			<h2>街区活动</h2>
+			<div class="row">
+				<div class="col-sm-6 active_left">
+					<div class="out-box">
+						<div class="activity-cover in-pic"></div>
+						<div class="active-info">
+                    <div class="tab">
+                        <div class="tab-cell">
+                            <a target="_blank" href="javascript">
+                                <h2 class="info-text text-overflow">中关村创业大街首届手机摄影大赛报名啦！</h2>
+                                <h5 class="text-overflow">活动时间：2016-11-21</h5>
+                                <h5 class="text-overflow"> 活动地点：中关村创业大街</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+					</div>
+				</div>
+				<div class="col-sm-6 active_right">
+					<div class="outbox">
+								<div class="ou-box">
+	                <div id="right-top-cover" class="out-box">
+	                	<div class=""></div>
+	                    <div class="activity-cover in-pic" style="background: url(images/active_4.png) 50% 50% / cover no-repeat;"></div>
+	                    <div class="active-info">
+	                        <div class="tab">
+	                            <div class="tab-cell">
+	                                <a target="_blank" href="javascript:;">
+	                                    <h4 class="info-text text-overflow">招募 | 注册、孵化、资讯——创业会客厅线上平台需要在创新创业道路上前行的你！</h4>
+	                                    <h6 class="text-overflow"> 活动时间：2016-07-07</h6>
+	                                    <h6 clasqs="text-overflow"> 活动地点：中关村创业大街</h6>
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+								</div>
+                <div class="row ou-box">
+                    <div class="col-xs-6 ou-box" style="padding-right: 5px">
+                        <div class="out-box right-bottom-cover">
+                            <div class="activity-cover in-pic" style="background: url(images/active_2.png) 50% 50% / cover no-repeat;"></div>
+                            <div class="active-info">
+                                <div class="tab">
+                                    <div class="tab-cell">
+                                        <a target="_blank" href="javascript:;">
+                                            <h4 class="info-text text-overflow">“午间时光”，打开艺术之门</h4>
+                                            <h6 class="text-overflow"> 时间：2016-11-28</h6>
+                                            <h6 class="text-overflow"> 地点：中关村创业大街</h6>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 ou-box" style="padding-left: 5px">
+                        <div class="out-box right-bottom-cover">
+                            <div class="activity-cover in-pic" style="background: url(images/active_3.png) 50% 50% / cover no-repeat;"></div>
+                            <div class="active-info">
+                                <div class="tab">
+                                    <div class="tab-cell">
+                                        <a target="_blank" href="javascript:;">
+                                            <h4 class="info-text text-overflow">【创业整理控】那些全球顶尖的孵化机构</h4>
+                                            <h6 class="text-overflow"> 时间：2016-11-24</h6><h6>
+                                            </h6><h6 class="text-overflow"> 地点：中关村创业大街</h6></a><h6><a target="_blank" href="javascript:;">
+                                        </a>
+                                    </h6></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--row-->
+
+            </div>
+				</div>
+			</div>
+		</div>
+		<!--街区活动结束-->
+		
+		<!--合作伙伴开始-->
+		<div class="zgc_partner">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+	                <a href="javascript:;"><img alt="首页" src="images/end_logo.gif"></a>
+	            </div>
+	            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> <span class="white18">关于我们</span>
+	            	<br>
+	              <span class="grey12s">
+									<a target="_blank" href="javascript:;">街区介绍</a><br>
+	                <a target="_blank" href="javascript:;">大事记</a><br>
+	                <a target="_blank" href="javascript:;">机构引进</a><br>
+	                <a target="_blank" href="javascript:;">友情链接</a><br>
+	                <a target="_blank" href="javascript:;">联系我们</a>
+								</span>
+	            </div>
+	            <div class="hidden-xs col-sm-4 col-md-3 col-lg-2"><span class="white18">合作伙伴</span>
+	                <br>
+	                <span class="grey12s">
+										<a target="_blank" href="javascript:;">英特尔</a><br>
+		               	<a target="_blank" href="javascript:;">普华永道</a><br>
+										韩国创业振兴院<br>京畿道创造经济革新中心<br>
+		                <a target="_blank" href="javascript:;">Born2Global</a>
+									</span>
+	            </div>
+	            <div class="hidden-xs col-sm-4 col-md-3 col-lg-2">
+	            	<span class="white18"><a target="_blank" href="javascript:;">友情链接</a></span>
+               	<br>
+                <span class="grey12s">
+                    <a target="_blank" href="javascript:;">海淀置业</a><br>
+                    <a target="_blank" href="javascript:;">清控科创</a><br>
+                    <a target="_blank" href="javascript:;">海淀区政府</a><br>
+                    <a target="_blank" href="javascript:;">中关村海淀园</a><br>
+                    <a target="_blank" href="javascript:;">中关村西区办</a><br>
+                    <a target="_blank" href="javascript:;">中关村管委会</a><br>
+                </span>
+	            </div>
+	            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"> <span class="white18">联系我们</span>
+	              <br>
+	                <span class="grey12s">
+	                	电话：010-62563080<br>工商注册：62563050-801<br>空间租赁：62563080-803<br> 地址：海淀区西大街29号<br>邮编：100080<br>
+	               	<a href="http://weibo.com/innoway" target="_blank"><img alt="" src="images/weibo.gif"></a>
+	                </span>
+	            </div>
+	            <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"><img alt="" src="images/weixinma.gif"></div>
+	       </div>
+	    </div>
+		</div>
+		<!--合作伙伴开始-->
+		
+		<!--底部版权开始-->
+		<footer class="zgc_copy">
+			<div class="footer">版权所有：北京海置科创科技服务有限公司 京ICP备14017783号-1 京公网安备11010802017670</div>
+		</footer>
+		<!--底部版权结束-->
+		
+		<!--回到顶部开始-->
+		<div class="rocket_top">
+			<div class="level_2"></div>
+			<div class="level_3"></div>
+		</div>
+		<!--回到顶部结束-->
+	</div>
+	<!--整体布局结束-->
+  </body>
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="js/template-native.js"></script>
+	<script	src="js/index.js"></script>
+</html>
